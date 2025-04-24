@@ -2,7 +2,7 @@ import { env } from "@/config/env";
 
 export const appConfig = {
   domain: env.DOMAIN,
-  name: "NextAuth.js Starter",
+  name: "Auth.js",
   description:
-    "Helping you get started with Next.js and NextAuth.js",
+    "Auth.js V5",
 } as const;

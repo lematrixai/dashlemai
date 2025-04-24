@@ -6,7 +6,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:push": "dotenv -e .env -- yarn drizzle-kit push",
+    "db:studio": "dotenv -e .env -- yarn drizzle-kit studio"
+
+
+
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
@@ -37,6 +42,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv-cli": "^8.0.0",
     "drizzle-kit": "^0.31.0",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
